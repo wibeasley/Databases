@@ -164,11 +164,15 @@ databases within R.
     purpose interface to Elasticsearch.
   - The `r pkg("uptasticsearch")` package is a
     Elasticsearch client tailored to data science workflows.
-- The `r pkg("mongolite")` package provides a high-level,
-  high-performance [MongoDB](https://www.mongodb.com/) client based on
-  `r github("mongodb/mongo-c-driver")`, including support
-  for aggregation, indexing, map-reduce, streaming, SSL encryption and
-  SASL authentication.
+- Packages for [MongoDB](https://mongodb.com):
+  - The `r pkg("mongolite")` package provides a high-level,
+    high-performance [MongoDB](https://www.mongodb.com/) client based on
+    `r github("mongodb/mongo-c-driver")`, including support
+    for aggregation, indexing, map-reduce, streaming, SSL encryption and
+    SASL authentication.
+  - The `r pkg("mdbplyr")` package provides a lazy, `dplyr`-like interface 
+    to a MongoDB database, using `mongolite` as client but abstracting the 
+    JSON-based MongoDB queries to a more R-friendly approach.
 - The `r pkg("R4CouchDB")` package provides a collection
   of functions for basic database and document management operations
   in [CouchDB](http://couchdb.apache.org/).
